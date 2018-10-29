@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://file.myfontastic.com/qTtVBcwdUdCGvbZC3GtYiV/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+		<script type="text/javascript" src="https://cdns-files.deezer.com/js/min/dz-v00202681.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+   
+    <title>Sampa Play</title>
+	</head>
+	<body>
+
+    <div class="box1">
+    <img src="assets/images/LOGO2.png" alt="">
+    </div>
+    <div class="box2">
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+     <!--<a class="navbar-brand text-white" href="#"> Navbar</a>-->
+     <img src="assets/images/sampa.png" alt="" class="responsive">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link text-white"  href="#" data-toggle="modal" data-target="#modal">Quem somos<span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white"  id="map-pop" href="#">Onde estamos</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+
+		<section id="main-content" class="box-2 col-sm-12 text-center text-white font-weight-bold w-100">
+      <!--<h1 class="text-center text-white font-weight-bold p-2"> Sampa Play</h1>
+      -->
+      <br>
+      <section id="img">
+      	<img src="assets\images\foto8.jpg" alt="Mercadão" class="responsive pr-3 col-sm-6" width="250" height="150">
+      </section>
+      <p class="text-justify text-white font-weight-normal col-sm-12 pt-2">
+        O Mercadão é um importante prédio histórico e arquitetônico da cidade, ele se destaca como polo cultural e turístico. Curta a experiência musical que tem tudo a ver com esse lugar e aproveite!
+       </p>
+       <br>
+       <br>
+      <div id="dz-root"></div>
+      <div id="player" style="width: 100%;" align="center"></div>
+      <br/>
+
+      <div class="container-fluid" id="controlers">
+                <div class="row">
+                    <div class="col-sm-12 col-12
+                     col-md-12">
+                        <input type="button" onclick="DZ.player.playPlaylist(4749228108); return false;" class="btn btn-light m-3" value="Ouvir agora"/>
+                  <br/>
+                        <button type="button" class="btn btn-light" onclick="DZ.player.play(); return false;" name="button">
+                            <i class="icon-play"></i>
+                        </button>
+           <button type="button" class="btn btn-light" onclick="DZ.player.pause(); return false;" name="button">
+                            <i class="icon-pause"></i>
+                        </button>
+           <button type="button" class="btn btn-light" onclick="DZ.player.prev(); return false;" name="button">
+                            <i class="icon-backward"></i>
+                        </button>
+           <button type="button" class="btn btn-light" onclick="DZ.player.next(); return false;" name="button">
+                            <i class="icon-forward"></i>
+                        </button>
+                  <br/>
+                    </div>
+                </div>
+            </div>
+            <div class="estrelas">
+       <h6 class="m-2 pt-2">Gostou?</h6>
+       <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+       <label for="cm_star-1"><i class="fa"></i></label>
+       <input type="radio" id="cm_star-1" name="fb" value="1"/>
+       <label for="cm_star-2"><i class="fa"></i></label>
+       <input type="radio" id="cm_star-2" name="fb" value="2"/>
+       <label for="cm_star-3"><i class="fa"></i></label>
+       <input type="radio" id="cm_star-3" name="fb" value="3"/>
+       <label for="cm_star-4"><i class="fa"></i></label>
+       <input type="radio" id="cm_star-4" name="fb" value="4"/>
+       <label for="cm_star-5"><i class="fa"></i></label>
+       <input type="radio" id="cm_star-5" name="fb" value="5"/>
+     </div>
+
+    </section>
+    <footer>@2018 Agora Vai!</footer>
+</div>
+
+<div id="modal" class="modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Quem Somos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Somos um grupo de mulheres mudando nossas vidas e entrando no mundo da Tecnologia, mais precisamente como desenvolvedoras Front-End.
+         Participando de um Bootcamp tivemos a oportunidade de trabalhar em grupo e unir nossas habilidades para desenvolver um produto com API's.
+         E nesse desafio crescemos muito como um time e dessa 'loucura' nasceu a ideia do Sampa Play.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="titles col-10 offset-1">
+          <h4 class="modal-title" id="modal-title">Onde estamos</h4>
+        </div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div>
+            <ul>
+              <li>Marco zero</li>
+              <li>Teatro Municipal</li>
+              <li>Patio do Colégio</li>
+              <li>Mercado Municipal de São Paulo</li>
+              <li>Pinacoteca do Estado de São Paulo</li>
+              <li>MASP</li>
+            </ul> 
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
